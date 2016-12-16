@@ -10,6 +10,7 @@
 #import "WMPageController.h"
 #import "RedViewController.h"
 #import "BlueViewController.h"
+#import "PageController.h"
 
 @interface AppDelegate ()
 
@@ -17,40 +18,40 @@
 
 @implementation AppDelegate
 
-- (WMPageController *)p_defaultController {
-    NSMutableArray *viewControllers = [[NSMutableArray alloc] init];
-    NSMutableArray *titles = [[NSMutableArray alloc] init];
-    for (int i = 0; i < 8; i++) {
-        Class vcClass;
-        NSString *title;
-        switch (i % 2) {
-            case 0:
-                vcClass = [RedViewController class];
-                title = @"Greetings";
-                break;
-            case 1:
-                vcClass = [BlueViewController class];
-                title = @"Hit Me";
-                break;
-        }
-        [viewControllers addObject:vcClass];
-        [titles addObject:title];
-    }
-    WMPageController *pageVC = [[WMPageController alloc] initWithViewControllerClasses:viewControllers andTheirTitles:titles];
-    pageVC.menuItemWidth = 85;
-    pageVC.postNotification = YES;
-    pageVC.bounces = YES;
-    //让菜单显示在导航栏上
-    pageVC.showOnNavigationBar = NO;
-    //vc.menuHeight = 250;
-    //设置菜单背景色
-    pageVC.menuBGColor = [UIColor clearColor];
-    //选中时的样式
-    pageVC.menuViewStyle = WMMenuViewStyleLine;
-    //更多的属性 自己查看头文件 因为都是中文提示
-    pageVC.preloadPolicy = WMPageControllerPreloadPolicyNeighbour;
-    return pageVC;
-}
+//- (WMPageController *)p_defaultController {
+//    NSMutableArray *viewControllers = [[NSMutableArray alloc] init];
+//    NSMutableArray *titles = [[NSMutableArray alloc] init];
+//    for (int i = 0; i < 8; i++) {
+//        Class vcClass;
+//        NSString *title;
+//        switch (i % 2) {
+//            case 0:
+//                vcClass = [RedViewController class];
+//                title = @"Greetings";
+//                break;
+//            case 1:
+//                vcClass = [BlueViewController class];
+//                title = @"Hit Me";
+//                break;
+//        }
+//        [viewControllers addObject:vcClass];
+//        [titles addObject:title];
+//    }
+//    WMPageController *pageVC = [[WMPageController alloc] initWithViewControllerClasses:viewControllers andTheirTitles:titles];
+//    pageVC.menuItemWidth = 85;
+//    pageVC.postNotification = YES;
+//    pageVC.bounces = YES;
+//    //让菜单显示在导航栏上
+//    pageVC.showOnNavigationBar = NO;
+//    //vc.menuHeight = 250;
+//    //设置菜单背景色
+//    pageVC.menuBGColor = [UIColor clearColor];
+//    //选中时的样式
+//    pageVC.menuViewStyle = WMMenuViewStyleLine;
+//    //更多的属性 自己查看头文件 因为都是中文提示
+//    pageVC.preloadPolicy = WMPageControllerPreloadPolicyNeighbour;
+//    return pageVC;
+//}
 
 
 
@@ -61,8 +62,8 @@
     
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [_window makeKeyAndVisible];
-    WMPageController *vc = [self p_defaultController];
-
+    //WMPageController *vc = [self p_defaultController];
+    PageController *vc = [PageController new];
     
     _window.rootViewController = [[UINavigationController alloc]initWithRootViewController:vc];
     

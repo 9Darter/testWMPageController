@@ -20,6 +20,7 @@
 		43ABD6E21E03D0D8003E9AD3 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABD6DD1E03D0D8003E9AD3 /* WMPageController.m */; };
 		43ABD6E81E03D261003E9AD3 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABD6E71E03D261003E9AD3 /* RedViewController.m */; };
 		43ABD6EB1E03D26A003E9AD3 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABD6EA1E03D26A003E9AD3 /* BlueViewController.m */; };
+		A172868E1E042534007D8EF2 /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A172868D1E042534007D8EF2 /* PageController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		43ABD6E71E03D261003E9AD3 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
 		43ABD6E91E03D26A003E9AD3 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
 		43ABD6EA1E03D26A003E9AD3 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		A172868C1E042534007D8EF2 /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
+		A172868D1E042534007D8EF2 /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				43ABD6E71E03D261003E9AD3 /* RedViewController.m */,
 				43ABD6E91E03D26A003E9AD3 /* BlueViewController.h */,
 				43ABD6EA1E03D26A003E9AD3 /* BlueViewController.m */,
+				A172868C1E042534007D8EF2 /* PageController.h */,
+				A172868D1E042534007D8EF2 /* PageController.m */,
 				43ABD6D11E03D0D8003E9AD3 /* WMPageController */,
 				43ABD6C31E03D0AD003E9AD3 /* Main.storyboard */,
 				43ABD6C61E03D0AD003E9AD3 /* Assets.xcassets */,
@@ -208,6 +213,7 @@
 				43ABD6C21E03D0AD003E9AD3 /* ViewController.m in Sources */,
 				43ABD6E21E03D0D8003E9AD3 /* WMPageController.m in Sources */,
 				43ABD6DF1E03D0D8003E9AD3 /* WMMenuView.m in Sources */,
+				A172868E1E042534007D8EF2 /* PageController.m in Sources */,
 				43ABD6E81E03D261003E9AD3 /* RedViewController.m in Sources */,
 				43ABD6EB1E03D26A003E9AD3 /* BlueViewController.m in Sources */,
 				43ABD6BF1E03D0AD003E9AD3 /* AppDelegate.m in Sources */,
@@ -333,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 545MYDUHE6;
 				INFOPLIST_FILE = testWMPageController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tedu.testWMPageController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 545MYDUHE6;
 				INFOPLIST_FILE = testWMPageController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tedu.testWMPageController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +378,7 @@
 				43ABD6D01E03D0AD003E9AD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
